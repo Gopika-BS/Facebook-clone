@@ -1,34 +1,23 @@
-* {
-  color: #1c1e21;
-}
-
 body {
   font-family: "Arial";
+  color: #1c1e21;
 }
-
 .section-main {
   min-height: 640px;
   background-color: #f0f2f5;
   padding-bottom: 112px;
   padding-top: 72px;
 }
-
 .fb-logo {
   /* margin: 112px 0 16px; */
   height: 45px;
 }
-
 .desc-1 {
   font-weight: normal;
   line-height: 32px;
   max-width: 500px;
   padding: 0 0 20px;
 }
-
-.row-12 {
-  --bs-gutter-y: 12px;
-}
-
 .card {
   background-color: #fff;
   border: none;
@@ -36,7 +25,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   width: 396px;
 }
-
 .form-control {
   border-radius: 6px;
   font-size: 17px;
@@ -45,26 +33,29 @@ body {
   color: #1d2129;
   line-height: 16px;
 }
-
 .form-control::placeholder {
   color: #c2c4c9;
 }
-
 .btn {
-  border: none;
+  /* border: none; */
   border-radius: 6px;
   padding: 0 16px;
   line-height: 48px;
 }
-
 .btn-primary {
   --bs-btn-bg: #1877f2;
   --bs-btn-hover-bg: #1877f2;
   --bs-btn-active-bg: #29487d;
 }
-
 .btn-success {
   --bs-btn-bg: #42b72a;
+  --bs-btn-hover-bg: #36a420;
+  --bs-btn-active-bg: #2b9217;
+}
+.btn-secondary {
+  --bs-btn-color: #8a8d91;
+  --bs-btn-border-color: #ccd0d5;
+  --bs-btn-bg: #f5f6f7;
   --bs-btn-hover-bg: #36a420;
   --bs-btn-active-bg: #2b9217;
 }
@@ -74,13 +65,23 @@ body {
 .link-primary {
   color: #1877f2;
 }
+.link-grey {
+  color: #737373;
+}
 a {
   text-decoration: none;
+  white-space: nowrap;
 }
 a:hover {
   text-decoration: underline;
+  color: inherit;
 }
-
+.fs-11 {
+  font-size: 11px;
+}
+.fs-12 {
+  font-size: 12px;
+}
 .fs-14 {
   font-size: 14px;
 }
@@ -105,4 +106,17 @@ a:hover {
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.row-12 {
+  --bs-gutter-y: 12px;
+}
+.li-gap a {
+  line-height: 1.6;
+  padding-left: 20px;
+}
+.li-gap {
+  margin-left: -20px;
+}
+.section-footer {
+  color: #737373;
 }
